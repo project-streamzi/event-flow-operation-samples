@@ -73,7 +73,7 @@
                                 <tags>
                                     <tag>latest</tag>
                                 </tags>
-                                <from>java:8</from>
+                                <from>docker.io/java:8</from>
                                 <assembly>
                                     <inline>
                                         <includeBaseDirectory>false</includeBaseDirectory>   

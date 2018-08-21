@@ -5,5 +5,5 @@ description: "Prints data to console"
 inputs:
 - "input-data"
 outputs:
-imageName: "cef-ops-log-data"
+imageName: "streamziprocessors/cef-ops-log-data"
 settings: {}

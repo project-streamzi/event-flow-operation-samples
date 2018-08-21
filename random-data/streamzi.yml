@@ -5,5 +5,5 @@ description: "Generates random data"
 inputs:
 outputs:
 - "output-data"
-imageName: "cef-ops-random-data"
+imageName: "streamziprocessors/cef-ops-random-data"
 settings: {}

@@ -1,7 +1,7 @@
 package io.streamzi.openshift.operations;
 
-import io.cloudevents.CloudEvent;
-import io.cloudevents.CloudEventBuilder;
+import io.streamzi.cloudevents.CloudEvent;
+import io.streamzi.cloudevents.CloudEventBuilder;
 import io.streamzi.openshift.dataflow.annotations.CloudEventComponent;
 import io.streamzi.openshift.dataflow.annotations.CloudEventComponentTimer;
 import io.streamzi.openshift.dataflow.annotations.CloudEventProducer;

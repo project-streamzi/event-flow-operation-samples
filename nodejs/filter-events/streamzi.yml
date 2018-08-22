@@ -6,7 +6,7 @@ inputs:
 - "input-data"
 outputs:
 - "output-data"
-imageName: "cef-ops-node-filter-event-data"
+imageName: "streamziprocessors/cef-ops-node-filter-event-data"
 settings: {
 "threshold": 0.3
 }

@@ -1,0 +1,16 @@
+apiVersion: "streamzi.io/v1"
+kind: Processor
+metadata:
+  name: filter-events
+spec:
+  displayName: "Filter Events"
+  description: "Applies a simple filter to a stream of events"
+  imageName: "streamziprocessors/cef-ops-node-filter-event-data"
+  inputs:
+  - "input-data"
+  outputs:
+  - "output-data"
+  settings: {
+    "threshold": 0.3
+  }
+

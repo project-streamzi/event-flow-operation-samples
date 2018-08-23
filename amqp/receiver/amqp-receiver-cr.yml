@@ -1,0 +1,12 @@
+apiVersion: "streamzi.io/v1"
+kind: Processor
+metadata:
+  name: amqp-receiver
+spec:
+  displayName: "AMQP Receiver"
+  description: "Logs AMQP messages"
+  imageName: "streamziprocessors/cef-ops-receiver"
+  inputs:
+    - "input-data"
+  outputs:
+  settings:

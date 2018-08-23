@@ -1,9 +1,0 @@
----
-id: random-data-source
-name: "Random Source"
-description: "Generates random data"
-inputs:
-outputs:
-- "output-data"
-imageName: "streamziprocessors/cef-ops-random-data"
-settings: {}

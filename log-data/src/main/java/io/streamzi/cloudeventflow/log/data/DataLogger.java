@@ -5,7 +5,7 @@
  */
 package io.streamzi.cloudeventflow.log.data;
 
-import io.cloudevents.CloudEvent;
+import io.streamzi.cloudevents.CloudEvent;
 import io.streamzi.openshift.dataflow.annotations.CloudEventComponent;
 import io.streamzi.openshift.dataflow.annotations.CloudEventConsumer;
 

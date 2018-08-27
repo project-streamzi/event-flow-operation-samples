@@ -1,0 +1,12 @@
+apiVersion: "streamzi.io/v1"
+kind: Processor
+metadata:
+  name: amqp-sender
+spec:
+  displayName: "AMQP Sender"
+  description: "Sends random doubles as AMQP messages"
+  imageName: "streamziprocessors/cef-ops-sender"
+  inputs:
+  - "input-data"
+  outputs:
+  settings:

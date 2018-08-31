@@ -1,0 +1,38 @@
+apiVersion: "streamzi.io/v1"
+kind: Flow
+metadata:
+  name: flow1
+spec:
+  name: flow1
+  nodes: [   {
+               uuid: "76fdce59-959d-b136-46fd-e0973ee531a8",
+               templateName: "Random Source",
+               templateId: "random-data-source",
+               transport: "kafka",
+               processorType: "DEPLOYABLE_IMAGE",
+               inputs: [ ],
+               outputs: [ "output-data" ],
+               imageName: "streamziprocessors/cef-ops-random-data",
+               settings: { }
+             }, {
+               uuid: "5fe0661b-ecd0-3e3b-b0ec-e78bc58d009e",
+               templateName: "Log Data",
+               templateId: "log-data",
+               transport: "kafka",
+               processorType: "DEPLOYABLE_IMAGE",
+               inputs: [ "input-data" ],
+               outputs: [ ],
+               imageName: "streamziprocessors/cef-ops-log-data",
+               settings: { }
+             }]
+  links: [{
+            sourceUuid: "76fdce59-959d-b136-46fd-e0973ee531a8",
+            targetUuid: "5fe0661b-ecd0-3e3b-b0ec-e78bc58d009e",
+            sourcePortName: "output-data",
+            targetPortName: "input-data"
+          }]
+  settings: { }
+  globalSettings: {
+    broker.url: "amqp://dispatch.myproject.svc:5672",
+    STREAMZI_KAFKA_BOOTSTRAP_SERVER: "my-cluster-kafka:9092"
+  }

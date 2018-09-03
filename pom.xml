@@ -18,6 +18,7 @@
         <module>log-data</module>
         <module>amqp/sender</module>
         <module>amqp/receiver</module>
+        <module>filter-data</module>
     </modules>
 
     <dependencies>
@@ -70,7 +71,8 @@
                         <images>
                             <image>
                                 <alias>processor</alias>
-                                <name>streamziprocessors/cef-ops-${project.artifactId}</name>
+                                <!--name>streamziprocessors/cef-ops-${project.artifactId}</name-->
+                                <name>hh/cef-ops-${project.artifactId}</name>
                                 <build>
                                     <tags>
                                         <tag>latest</tag>

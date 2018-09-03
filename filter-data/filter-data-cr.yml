@@ -1,0 +1,16 @@
+apiVersion: "streamzi.io/v1"
+kind: Processor
+metadata:
+  name: filter-data
+spec:
+  displayName: "Filter"
+  description: "Filters data based on value"
+  imageName: "streamziprocessors/cef-ops-filter-data"
+  inputs:
+    - "input-data"
+  outputs:
+    - "output-data"
+    - "rejected-data"
+  settings: {
+    "threshold": 0.3
+  }

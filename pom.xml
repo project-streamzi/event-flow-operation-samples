@@ -21,6 +21,7 @@
         <module>log-data</module>
         <module>amqp/sender</module>
         <module>amqp/receiver</module>
+        <module>filter-data</module>
     </modules>
 
     <dependencies>

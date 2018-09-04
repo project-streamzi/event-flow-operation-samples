@@ -10,6 +10,9 @@ else
     docker build -t docker.io/streamziprocessors/cef-ops-log-data:latest log-data
     docker push docker.io/streamziprocessors/cef-ops-log-data:latest
 
+    docker build -t docker.io/streamziprocessors/cef-ops-filter-data:latest filter-data
+    docker push docker.io/streamziprocessors/cef-ops-filter-data:latest
+
     docker build -t docker.io/streamziprocessors/cef-ops-random-data:latest random-data
     docker push docker.io/streamziprocessors/cef-ops-random-data:latest
 

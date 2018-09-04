@@ -77,8 +77,7 @@
                         <images>
                             <image>
                                 <alias>processor</alias>
-                                <!--name>streamziprocessors/cef-ops-${project.artifactId}</name-->
-                                <name>hh/cef-ops-${project.artifactId}</name>
+                                <name>streamziprocessors/cef-ops-${project.artifactId}</name>
                                 <build>
                                     <tags>
                                         <tag>latest</tag>

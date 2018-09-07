@@ -9,7 +9,7 @@
     </parent>
     <artifactId>log-data</artifactId>
     <packaging>jar</packaging>
-    <name>${parent.artifactId}-${project.artifactId}</name>
+    <name>${project.parent.artifactId}-${project.artifactId}</name>
 
     <build>
         <plugins>

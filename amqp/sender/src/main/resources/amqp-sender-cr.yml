@@ -7,6 +7,6 @@ spec:
   description: "Sends random doubles as AMQP messages"
   imageName: "streamziprocessors/cef-ops-sender"
   inputs:
-  - "input-data"
   outputs:
+    - "output-data"
   settings:

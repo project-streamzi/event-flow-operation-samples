@@ -1,0 +1,9 @@
+apiVersion: "streamzi.io/v1"
+kind: Cloud
+metadata:
+  name: remote
+spec:
+  description: "Local development OpenShift"
+  hostname: 192.168.42.1
+  port: 8443
+  token: yhyjIon84_kOUXI19J-oRihdTdimzLl-tj7Y6gMXwDA

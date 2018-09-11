@@ -9,7 +9,7 @@ else
 
 ## Push the Java images, created in the maven build;
 
-    mvn -Ddocker.username=$DOCKER_USERNAME -Ddocker.password=$DOCKER_PASSWORD clean install
+    mvn -Ddocker.username=$DOCKER_USERNAME -Ddocker.password=$DOCKER_PASSWORD clean install -Pdh
 
 ## Build and Push the Node image;
     docker build -t docker.io/streamziprocessors/cef-ops-node-filter-event-data:latest nodejs/filter-events

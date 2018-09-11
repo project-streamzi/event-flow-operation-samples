@@ -104,7 +104,6 @@
                                 </build>
                             </image>
                         </images>
-                        <skip>true</skip>
                     </configuration>
 
                     <executions>
@@ -116,7 +115,6 @@
                             </goals>
                         </execution>
 
-
                     </executions>
                 </plugin>
 
@@ -124,6 +122,40 @@
         </pluginManagement>
 
     </build>
+
+    <profiles>
+        <profile>
+            <id>Travis-non-pr-build</id>
+            <activation>
+                <property>
+                    <name>env.TRAVIS_PULL_REQUEST</name>
+                    <value>false</value>
+                </property>
+            </activation>
+            <build>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <inherited>true</inherited>
+                            <groupId>io.fabric8</groupId>
+                            <artifactId>docker-maven-plugin</artifactId>
+                            <executions>
+                                <execution>
+                                    <phase>package</phase>
+                                    <id>build-push</id>
+                                    <goals>
+                                        <goal>build</goal>
+                                        <goal>push</goal>
+                                    </goals>
+                                </execution>
+
+                            </executions>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+    </profiles>
 
     <repositories>
         <repository>

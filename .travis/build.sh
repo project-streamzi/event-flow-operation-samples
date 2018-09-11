@@ -8,15 +8,8 @@ else
     echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin docker.io
 
 ## Push the Java images, created in the maven build;
-    docker push docker.io/streamziprocessors/cef-ops-log-data:latest
 
-    docker push docker.io/streamziprocessors/cef-ops-filter-data:latest
-
-    docker push docker.io/streamziprocessors/cef-ops-random-data:latest
-
-    docker push docker.io/streamziprocessors/cef-ops-receiver:latest
-
-    docker push docker.io/streamziprocessors/cef-ops-sender:latest
+    mvn -Ddocker.username=$DOCKER_USERNAME -Ddocker.password=$DOCKER_PASSWORD clean install
 
 ## Build and Push the Node image;
     docker build -t docker.io/streamziprocessors/cef-ops-node-filter-event-data:latest nodejs/filter-events

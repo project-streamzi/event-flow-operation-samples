@@ -125,13 +125,7 @@
 
     <profiles>
         <profile>
-            <id>Travis-non-pr-build</id>
-            <activation>
-                <property>
-                    <name>env.TRAVIS_PULL_REQUEST</name>
-                    <value>false</value>
-                </property>
-            </activation>
+            <id>dh</id>
             <build>
                 <pluginManagement>
                     <plugins>

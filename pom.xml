@@ -39,7 +39,7 @@
     </dependencies>
 
     <properties>
-        <flow-manager.version>0.0.1</flow-manager.version>
+        <flow-manager.version>0.0.2</flow-manager.version>
     </properties>
 
     <build>

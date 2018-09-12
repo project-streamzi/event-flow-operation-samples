@@ -37,6 +37,6 @@ public class RandomDataSource {
                 .data(contents)
                 .build();
         System.out.println("x");
-        output.send(simpleKeyValueEvent);
+        output.send(eventId, simpleKeyValueEvent);
     }
 }

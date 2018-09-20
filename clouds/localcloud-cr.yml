@@ -7,4 +7,5 @@ spec:
   hostname: 192.168.42.1
   port: 8443
   namespace: myproject
-  token: yhyjIon84_kOUXI19J-oRihdTdimzLl-tj7Y6gMXwDA
+  token: FA3Eiou5kd2Zx3V3gnJay_3BFypW6M_WVaLr3_5GA54
+  bootstrapServers: my-cluster-kafka.myproject.svc.cluster.local:9092

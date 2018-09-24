@@ -72,7 +72,7 @@
                         <images>
                             <image>
                                 <alias>processor</alias>
-                                <name>docker.io/streamziprocessors/cef-ops-${project.artifactId}</name>
+                                <name>docker.io/streamziprocessors/${project.artifactId}</name>
                                 <build>
                                     <tags>
                                         <tag>latest</tag>

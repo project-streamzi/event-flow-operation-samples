@@ -1,4 +1,4 @@
-package io.streamzi.openshift.operations;
+package io.streamzi.eventflow.samples.source;
 
 import io.streamzi.cloudevents.CloudEvent;
 import io.streamzi.cloudevents.CloudEventBuilder;

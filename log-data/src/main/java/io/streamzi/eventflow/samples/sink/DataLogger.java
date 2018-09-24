@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package io.streamzi.cloudeventflow.log.data;
+package io.streamzi.eventflow.samples.sink;
 
 import io.streamzi.cloudevents.CloudEvent;
 import io.streamzi.eventflow.annotations.CloudEventComponent;

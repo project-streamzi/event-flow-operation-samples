@@ -19,3 +19,12 @@ The Stream Processors are deployed as Kubernetes Custom Resources. Each processo
 $ oc create -f data-processor/src/main/resources/processor-cr.yml
 ```
 
+## Deploying and Registering all Stream Processors
+
+The set of example Stream Processors can be deployed direct from DockerHub with the following commands:
+
+```bash
+$ wget https://raw.githubusercontent.com/project-streamzi/eventflow-processor-samples/master/install.sh
+$ chmod u+x install.sh
+$ ./install.sh
+```

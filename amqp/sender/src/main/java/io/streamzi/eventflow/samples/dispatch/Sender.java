@@ -18,7 +18,7 @@
  * under the License.
  *
  */
-package io.streamzi.dispatch.example;
+package io.streamzi.eventflow.samples.dispatch;
 
 import io.streamzi.eventflow.utils.EnvironmentResolver;
 import org.apache.qpid.jms.JmsConnectionFactory;

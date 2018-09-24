@@ -14,14 +14,14 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
-    <name>cloudevent-flow-${project.artifactId}</name>
+    <name>EventFlow Processor Samples</name>
 
     <modules>
-        <module>random-data</module>
-        <module>log-data</module>
+        <module>data-source</module>
+        <module>data-sink</module>
+        <module>data-processor</module>
         <module>amqp/sender</module>
         <module>amqp/receiver</module>
-        <module>filter-data</module>
     </modules>
 
     <dependencies>

@@ -26,7 +26,7 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>sender</artifactId>
+    <artifactId>amqp-sender</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>

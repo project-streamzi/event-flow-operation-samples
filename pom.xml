@@ -34,7 +34,7 @@
     </dependencies>
 
     <properties>
-        <evenflow.version>0.0.4</evenflow.version>
+        <evenflow.version>0.0.5</evenflow.version>
     </properties>
 
     <build>

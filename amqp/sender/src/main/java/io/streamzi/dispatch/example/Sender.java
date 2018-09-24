@@ -20,7 +20,7 @@
  */
 package io.streamzi.dispatch.example;
 
-import io.streamzi.openshift.dataflow.container.config.EnvironmentResolver;
+import io.streamzi.eventflow.utils.EnvironmentResolver;
 import org.apache.qpid.jms.JmsConnectionFactory;
 
 import javax.jms.*;

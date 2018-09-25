@@ -1,32 +1,30 @@
-# Event Flow Operations/Processors
+# EventFlow Processor Samples
 
 Sample containers showing data stream processing for the CloudEvent Flow.
-The [CloudEventFlow](https://github.com/project-streamzi/cloudevent-flow) application is required to run these samples.
+The [EventFlow](https://github.com/project-streamzi/eventflow) application is required to run these samples.
 
-# Registration
+## Building the Linux Container image
 
-The Stream Processors are deployed as Kubernetes Custom Resources.
-To deploy them run the following commands:
-
-```bash
-$ oc create -f random-data/random-data-cr.yml
-$ oc create -f log-data/lod-data-cr.yml
-$ oc create -f amqp/receiver/ampq-receiver-cr.yml
-$ oc create -f amqp/sender/amqp-sender-cr.yml 
-$ oc create -f nodejs/filter-events/filter-data-cr.yml 
-```
-
-# Building / Development
-
-Run the following commands to build and update running processors
+Each java project is build via standard maven project:
 
 ```bash
-$ cd random-data
-$ mvn clean package
-$ docker build -t docker.io/streamziprocessors/cef-ops-random-data:latest .
-$ oc delete pod <name-of-random-data-pod>
+mvn clean package
 ```
 
-TODO: Script to build/deploy all operations?
+## Registration of the Stream Processor
 
-TODO: how to deploy the Node.js operations?
+The Stream Processors are deployed as Kubernetes Custom Resources. Each processor sample has a `.yml` file inside the `src/main/resources` folder, which you need apply to our cluster, like:
+
+```bash
+$ oc create -f data-processor/src/main/resources/processor-cr.yml
+```
+
+## Deploying and Registering all Stream Processors
+
+The set of example Stream Processors can be deployed direct from DockerHub with the following commands:
+
+```bash
+$ wget https://raw.githubusercontent.com/project-streamzi/eventflow-processor-samples/master/install.sh
+$ chmod u+x install.sh
+$ ./install.sh
+```

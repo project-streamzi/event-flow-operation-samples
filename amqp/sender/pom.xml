@@ -20,13 +20,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>io.streamzi.processors</groupId>
+        <groupId>io.streamzi.eventflow.samples</groupId>
         <artifactId>parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>sender</artifactId>
+    <artifactId>amqp-sender</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -70,7 +70,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>io.streamzi.dispatch.example.Sender</mainClass>
+                                    <mainClass>io.streamzi.eventflow.samples.dispatch.Sender</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

@@ -9,19 +9,19 @@
         <version>27</version>
     </parent>
 
-    <groupId>io.streamzi.processors</groupId>
+    <groupId>io.streamzi.eventflow.samples</groupId>
     <artifactId>parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
     <packaging>pom</packaging>
-    <name>cloudevent-flow-${project.artifactId}</name>
+    <name>EventFlow Processor Samples</name>
 
     <modules>
-        <module>random-data</module>
-        <module>log-data</module>
+        <module>data-source</module>
+        <module>data-sink</module>
+        <module>data-processor</module>
         <module>amqp/sender</module>
         <module>amqp/receiver</module>
-        <module>filter-data</module>
     </modules>
 
     <dependencies>
@@ -34,7 +34,7 @@
     </dependencies>
 
     <properties>
-        <evenflow.version>0.0.4</evenflow.version>
+        <evenflow.version>0.0.5</evenflow.version>
     </properties>
 
     <build>
@@ -72,7 +72,7 @@
                         <images>
                             <image>
                                 <alias>processor</alias>
-                                <name>docker.io/streamziprocessors/cef-ops-${project.artifactId}</name>
+                                <name>docker.io/streamziprocessors/${project.artifactId}</name>
                                 <build>
                                     <tags>
                                         <tag>latest</tag>

@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: "Filter"
   description: "Filters data based on value"
-  imageName: "streamziprocessors/cef-ops-filter-data"
+  imageName: "streamziprocessors/data-processor"
   inputs:
     - "input-data"
   outputs:

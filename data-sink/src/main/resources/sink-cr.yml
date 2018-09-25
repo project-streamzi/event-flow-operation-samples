@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: "Log Data"
   description: "Prints the data received to console"
-  imageName: "streamziprocessors/cef-ops-log-data"
+  imageName: "streamziprocessors/data-sink"
   inputs:
     - "input-data"
   outputs:

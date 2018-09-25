@@ -12,7 +12,7 @@ else
     mvn -Ddocker.username=$DOCKER_USERNAME -Ddocker.password=$DOCKER_PASSWORD clean install -Pdh
 
 ## Build and Push the Node image;
-    docker build -t docker.io/streamziprocessors/cef-ops-node-filter-event-data:latest nodejs/filter-events
-    docker push docker.io/streamziprocessors/cef-ops-node-filter-event-data:latest
+    docker build -t docker.io/streamziprocessors/node-data-processor:latest nodejs/filter-events
+    docker push docker.io/streamziprocessors/node-data-processor:latest
 
 fi

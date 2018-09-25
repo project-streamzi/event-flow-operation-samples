@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: "Filter Events"
   description: "Applies a simple filter to a stream of events"
-  imageName: "streamziprocessors/cef-ops-node-filter-event-data"
+  imageName: "streamziprocessors/node-data-processor"
   inputs:
   - "input-data"
   outputs:

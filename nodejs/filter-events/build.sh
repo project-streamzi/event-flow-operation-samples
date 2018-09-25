@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo 'Building Filter Events Processor'
-docker build -t docker.io/streamziprocessors/cef-ops-node-filter-event-data .
-docker tag docker.io/streamziprocessors/cef-ops-node-filter-event-data:latest docker.io/streamziprocessors/cef-ops-node-filter-event-data:latest
+docker build -t docker.io/streamziprocessors/node-data-processor .
+docker tag docker.io/streamziprocessors/node-data-processor:latest docker.io/streamziprocessors/node-data-processor:latest

@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: "Random Source"
   description: "Generates random doubles 0 < n < 1"
-  imageName: "streamziprocessors/cef-ops-random-data"
+  imageName: "streamziprocessors/data-source"
   inputs:
   outputs:
     - "output-data"

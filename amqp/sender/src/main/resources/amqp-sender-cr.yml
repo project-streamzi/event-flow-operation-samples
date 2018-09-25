@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: "AMQP Sender"
   description: "Sends random doubles as AMQP messages"
-  imageName: "streamziprocessors/cef-ops-sender"
+  imageName: "streamziprocessors/amqp-sender"
   inputs:
   outputs:
     - "output-data"

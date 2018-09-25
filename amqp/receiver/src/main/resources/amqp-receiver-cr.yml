@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: "AMQP Receiver"
   description: "Logs AMQP messages"
-  imageName: "streamziprocessors/cef-ops-receiver"
+  imageName: "streamziprocessors/amqp-receiver"
   inputs:
     - "input-data"
   outputs:

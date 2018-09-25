@@ -2,6 +2,6 @@
 
 echo "Installing event-flow samples"
 
-oc create -f https://raw.githubusercontent.com/project-streamzi/event-flow-operation-samples/master/random-data/src/main/resources/random-data-cr.yml
-oc create -f https://raw.githubusercontent.com/project-streamzi/event-flow-operation-samples/master/filter-data/src/main/resources/filter-data-cr.yml
-oc create -f https://raw.githubusercontent.com/project-streamzi/event-flow-operation-samples/master/log-data/src/main/resources/log-data-cr.yml
+oc create -f https://raw.githubusercontent.com/project-streamzi/event-flow-operation-samples/master/data-source/src/main/resources/source-cr.yml
+oc create -f https://raw.githubusercontent.com/project-streamzi/event-flow-operation-samples/master/data-processor/src/main/resources/processor-cr.yml
+oc create -f https://raw.githubusercontent.com/project-streamzi/event-flow-operation-samples/master/data-sink/src/main/resources/sink-cr.yml
